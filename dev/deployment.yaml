@@ -15,6 +15,5 @@ spec:
       containers:
       - name: myapp
         image: pbaloriya/notepad-app:latest
-        command: ["python", "/app/backend/manage.py", "runserver", "0.0.0.0:8008"]
         ports:
-        - containerPort: 8008
+        - containerPort: 8080
