@@ -17,3 +17,9 @@ spec:
         image: pbaloriya/notepad-app:latest
         ports:
         - containerPort: 8000
+        volumeMounts:
+        - name: app-volume
+          mountPath: /app/backend
+      volumes:
+      - name: app-volume
+        emptyDir: {}
