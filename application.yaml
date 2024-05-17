@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: notepad-argocd-app
-  namespace: argocd-demo
+  namespace: argocd
 spec:
   project: default
 
@@ -16,8 +16,8 @@ spec:
 
   syncPolicy:
     syncOptions:
-    - CreateNamespace=false
+    - CreateNamespace=true
 
     automated:
-      selfHeal: false
-      prune: false
+      selfHeal: true
+      prune: true
