@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: i
+  replicas: 1
   template:
     metadata:
       labels:
